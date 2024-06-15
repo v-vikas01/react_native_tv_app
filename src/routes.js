@@ -1,14 +1,14 @@
-import {View, Text} from 'react-native';
 import React, {useEffect, useState} from 'react';
+import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import AuthScreen from './screen/auth/login';
 import SliderScreen from './screen/slider/home';
 import {LoadingIndicator} from './component/helper';
 import DashBoard from './screen/dashboard';
 import DetailsScreen from './screen/dashboard/component/details';
+import CardsScreen from './screen/dashboard/component/dumy/dumy';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,12 +18,7 @@ const Routes = () => {
   useEffect(() => {
     const checkLogin = async () => {
       const outletlocation = await AsyncStorage.getItem('outletlocation');
-      console.log(outletlocation);
-      if (outletlocation) {
-        setInitialRoute('dashboard');
-      } else {
-        setInitialRoute('dashboard');
-      }
+      setInitialRoute(outletlocation ? 'dashboard' : 'login');
     };
     checkLogin();
   }, []);
@@ -38,7 +33,7 @@ const Routes = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={initialRoute}>
+      <Stack.Navigator initialRouteName={'dashboard'}>
         <Stack.Screen
           name="login"
           component={AuthScreen}
@@ -57,6 +52,11 @@ const Routes = () => {
         <Stack.Screen
           name="detailsScreen"
           component={DetailsScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="cardsScreen"
+          component={CardsScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

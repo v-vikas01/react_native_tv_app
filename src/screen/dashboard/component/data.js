@@ -5,13 +5,14 @@ export const SliderImages = [
 
   // 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEycHL1dFrRJzfGzIgdC7NThks4sxgMoPwJw&usqp=CAU',
   // 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQel8NHSyP6x_uJHnyysuAy9fOq0nohuApZ6w&usqp=CAU',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/iU4uDtZIcV_1714716505.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/CTLBFx03gd_1714633752.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/uUALwWQqL5_1674123071.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/1Xmhci6qhQ_1716788862.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/xWlyJf3vyh_1649335922.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/qBtwN36sgo_1657598260.jpg',
-  'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/Z9XeDDdDyh_1649335449.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/iU4uDtZIcV_1714716505.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/CTLBFx03gd_1714633752.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/uUALwWQqL5_1674123071.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/1Xmhci6qhQ_1716788862.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/xWlyJf3vyh_1649335922.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/qBtwN36sgo_1657598260.jpg',
+  // 'https://kalyanimotorsadmin.kalyanicrm.com/storage/banner/Z9XeDDdDyh_1649335449.jpg',
+  require('../../../../assets/images/BANNER.png'),
 ];
 
 export const Data = [
